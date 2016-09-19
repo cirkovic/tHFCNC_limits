@@ -1,0 +1,5 @@
+Counter events :
+	 all events                                  297135 	 1.00 	 1.0000
+	 has >=1 gamma at preselection               265936 	 0.90 	 0.8950
+	 has >=1 selected gamma                       11243 	 0.04 	 0.0378
+

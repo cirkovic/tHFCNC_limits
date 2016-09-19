@@ -1,0 +1,22 @@
+MCComponent: TTHnobb_Chunk0
+	addWeight      :   1.0
+	dataset        :   /ttHJetToNonbb_M125_13TeV_amcatnloFXFX_madspin_pythia8/RunIISpring15DR74-Asympt25ns_MCRUN2_74_V9-v2/MINIAODSIM
+	dataset_entries:   1561760
+	effCorrFactor  :   1
+	efficiency     :   CFG: eff
+	eleFile        :   data/eff_ele12.root
+	eleHisto       :   h_electronScaleFactor_RecoIdIsoSip
+	muonFile       :   data/eff_mu12.root
+	muonHisto      :   TH2D_ALL_2012
+	files          :   ['root://eoscms.cern.ch//eos/cms/store/mc/RunIISpring15DR74/ttHJetToNonbb_M125_13TeV_amcatnloFXFX_madspin_pythia8/MINIAODSIM/Asympt25ns_MCRUN2_74_V9-v2/00000/18B642FE-F112-E511-937B-003048D334C7.root', 'root://eoscms.cern.ch//eos/cms/store/mc/RunIISpring15DR74/ttHJetToNonbb_M125_13TeV_amcatnloFXFX_madspin_pythia8/MINIAODSIM/Asympt25ns_MCRUN2_74_V9-v2/00000/22F65FBE-F212-E511-A106-002590D9D8B2.root']
+	intLumi        :   1.0
+	isData         :   False
+	isEmbed        :   False
+	isMC           :   True
+	nGenEvents     :   1
+	puFileData     :   $CMSSW_BASE/src/CMGTools/TTHAnalysis/data/puProfile_Data12.root
+	puFileMC       :   $CMSSW_BASE/src/CMGTools/TTHAnalysis/data/puProfile_Summer12_53X.root
+	splitFactor    :   28
+	tree_name      :   None
+	triggers       :   []
+	xSection       :   0.2150955

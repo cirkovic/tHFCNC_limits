@@ -1,0 +1,17 @@
+Combination of incl=MVA_default.card.txt
+imax 1 number of bins
+jmax 6 number of processes minus 1
+kmax 2 number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+shapes *     incl  MVA_default.input.root x_$PROCESS x_$PROCESS_$SYSTEMATIC
+----------------------------------------------------------------------------------------------------------------------------------
+bin          incl    
+observation  259267.0
+----------------------------------------------------------------------------------------------------------------------------------
+bin                             incl                                     incl                                     incl                                     incl                                     incl                                     incl                                     incl                                   
+process                         ST_TH_1L3B_Hct                           ST_TH_1L3B                               TT_TuneCUETP8M1_13TeV-powheg-pythia8     TT_AntitopLeptonicDecay_TH_1L3B_Eta_Hct  TT_AntitopLeptonicDecay_TH_1L3B_Eta_Hut  TT_TopLeptonicDecay_TH_1L3B_Eta_Hut      TT_TopLeptonicDecay_TH_1L3B_Eta_Hct    
+process                         -1                                       0                                        1                                        2                                        3                                        4                                        5                                      
+rate                            49166.0000                               36813.0000                               18146.0000                               34255.0000                               30189.0000                               56939.0000                               33759.0000                             
+----------------------------------------------------------------------------------------------------------------------------------
+CMS_tH_th               lnN     20.0                                     20.0                                     -                                        20.0                                     20.0                                     20.0                                     20.0                                   
+CMS_tH_tt               lnN     -                                        -                                        20.0                                     -                                        -                                        -                                        -                                      

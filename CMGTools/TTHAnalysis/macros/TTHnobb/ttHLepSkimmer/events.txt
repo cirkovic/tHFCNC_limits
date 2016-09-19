@@ -1,0 +1,5 @@
+Counter events :
+	 all events                                 1561760 	 1.00 	 1.0000
+	 vetoed events                                    0 	 0.00 	 0.0000
+	 accepted events                             297135 	 -1.00 	 0.1903
+
