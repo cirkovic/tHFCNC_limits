@@ -1,5 +1,4 @@
-MVA_ST_default : MVA_ST_default : 20,-1.0,1.0;   XTitle="MVA_ST_default", Legend='TL', MoreY=1.6
-MVA_TT_default : MVA_TT_default : 20,-1.0,1.0;   XTitle="MVA_TT_default", Legend='TL', MoreY=1.6
+MVA_default : MVA_default : 20,-1.0,1.0;   XTitle="MVA_default", Legend='TL', MoreY=1.6
                                                               
 H_m         : H_m         : 50,0.0,300.0;     XTitle="H_m",         Legend='TL', MoreY=1.6
 H_pt        : H_pt        : 50,0.0,500.0;     XTitle="H_pt",        Legend='TL', MoreY=1.6

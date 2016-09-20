@@ -1,0 +1,14 @@
+## Datacard for cut file cuts.txt
+shapes *        * MVA_TT_default.input.root x_$PROCESS x_$PROCESS_$SYSTEMATIC
+##----------------------------------
+bin         MVA_TT_default
+observation 250194.0
+##----------------------------------
+##----------------------------------
+bin                                       MVA_TT_default                            MVA_TT_default                            MVA_TT_default                            MVA_TT_default                            MVA_TT_default                            MVA_TT_default                            MVA_TT_default 
+process                                       ST_TH_1L3B                            ST_TH_1L3B_Hct       TT_TopLeptonicDecay_TH_1L3B_Eta_Hut   TT_AntitopLeptonicDecay_TH_1L3B_Eta_Hut       TT_TopLeptonicDecay_TH_1L3B_Eta_Hct   TT_AntitopLeptonicDecay_TH_1L3B_Eta_Hct      TT_TuneCUETP8M1_13TeV-powheg-pythia8 
+process                                               -5                                        -4                                        -3                                        -2                                        -1                                         0                                         1 
+rate                                           36813.000                                 49166.000                                 56939.000                                 30189.000                                 33759.000                                 34255.000                                  9073.000 
+##----------------------------------
+CMS_tH_th    lnN                                    20.0                                      20.0                                      20.0                                      20.0                                      20.0                                      20.0                                         - 
+CMS_tH_tt    lnN                                       -                                         -                                         -                                         -                                         -                                         -                                      20.0 

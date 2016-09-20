@@ -45,8 +45,8 @@ class MVAVars:
 
         '''
         trainings = [0]
-        samples = ["2lss_ttbar", "2lss_ttV"]
         '''
+        samples = ["ST", "TT"]
         categories = ["default"]
 
         #VARS = []
@@ -67,15 +67,16 @@ class MVAVars:
                         VARS[str(t)+"/"+s+"_"+c].append(v.attrib['Title'])
         '''
 
-        for c in categories:
-            weights = basedir+"/weights/TMVAClassification_BDT.weights.xml"
-            print weights
-            tree = ET.parse(weights)
-            root = tree.getroot()
-            #VARS.append([])
-            VARS[c] = []
-            for v in root[2]:
-                VARS[c].append(v.attrib['Title'])
+        for s in samples:
+            for c in categories:
+                weights = basedir+"/"+s+"/weights/TMVAClassification_BDT.weights.xml"
+                print weights
+                tree = ET.parse(weights)
+                root = tree.getroot()
+                #VARS.append([])
+                VARS[s+"_"+c] = []
+                for v in root[2]:
+                    VARS[s+"_"+c].append(v.attrib['Title'])
 
         #self._vars = []
         self._vars = {}
@@ -118,10 +119,11 @@ class MVAVars:
                     ( cat_lambdas[c], MVATool(s+"_"+c, basedir+str(t)+"/"+s+"_"+c+"/weights/"+s+"_"+c+"_BDTG.weights.xml", self._vars[str(t)+"/"+s+"_"+c], specs=self._Spect) ),
                     ])
         '''
-        for c in categories:
-            self._MVAs["MVA_"+c] = CategorizedMVA([
-            ( cat_lambdas[c], MVATool("MVA_"+c, basedir+"/weights/TMVAClassification_BDT.weights.xml", self._vars[c]) ),
-            ])
+        for s in samples:
+            for c in categories:
+                self._MVAs["MVA_"+s+"_"+c] = CategorizedMVA([
+                ( cat_lambdas[c], MVATool("MVA_"+s+"_"+c, basedir+"/"+s+"/weights/TMVAClassification_BDT.weights.xml", self._vars[s+"_"+c]) ),
+                ])
 
 
     def listBranches(self):
