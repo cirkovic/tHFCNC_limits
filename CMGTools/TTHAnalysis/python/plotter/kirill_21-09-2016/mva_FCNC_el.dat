@@ -1,0 +1,22 @@
+max	*	number of categories
+jmax	*	number of samples minus one
+kmax	*	number of nuisance parameter
+----------------------------------------------------------------------------------------------------------------------
+
+shapes *        *   input.root	h_e_$PROCESS_default
+shapes data_obs *   input.root  h_e_data_default
+----------------------------------------------------------------------------------------------------------------------
+
+bin		elchannel
+observation	439.0	
+----------------------------------------------------------------------------------------------------------------------
+bin	elchannel	elchannel
+process	signal	     	bg
+process	0       	1 	
+rate	593.87	        439.0
+---------------------------------------------------------------------------------------------------------------------
+#source of uncertainty pdf	signal	 bg 	
+CMS_simpleNorm_sig     lnN	 1.20	 -
+CMS_simpleNorm_bg      lnN	 -	 1.20	
+	
+

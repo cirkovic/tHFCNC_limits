@@ -1,0 +1,17 @@
+max	*	number of categories
+jmax	*	number of samples minus one
+kmax	*	number of nuisance parameter
+----------------------------------------------------------------------------------------------------------------------
+
+bin		elchannel
+observation	439.0	
+----------------------------------------------------------------------------------------------------------------------
+bin	elchannel	elchannel
+process	signal	     	bg
+process	0       	1 	
+rate	593.87	        439.0
+---------------------------------------------------------------------------------------------------------------------
+#source of uncertainty pdf	signal	 bg 	
+CMS_simpleNorm_sig     lnN	 1.20	 -
+CMS_simpleNorm_bg      lnN	 -	 1.20	
+

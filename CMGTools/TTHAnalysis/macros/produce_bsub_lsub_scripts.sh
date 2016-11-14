@@ -26,6 +26,7 @@ Q="-q 1nh"
 #INPUT=/afs/cern.ch/work/m/mdjordje/TTH/TREES_76X_150216_noLHE_jecV1_noJecUnc
 #INPUT=/afs/cern.ch/work/p/peruzzi/tthtrees/TREES_76X_200216_jecV1M2
 #INPUT=/afs/cern.ch/work/c/cirkovic/fcnc/CMSSW_8_0_12/src/tHFCNC/NtupleAnalyzer/test/OUTPUT
+#INPUT=/afs/cern.ch/work/c/cirkovic/FCNC/CMSSW_8_0_12/src/CMGTools/TTHAnalysis/macros/INPUT
 INPUT=/afs/cern.ch/work/c/cirkovic/FCNC/CMSSW_8_0_12/src/CMGTools/TTHAnalysis/macros/INPUT
 #FTBASE=FTREES_04-11-2015
 #FTBASE=FTREES
@@ -82,10 +83,47 @@ touch $RUNSCRIPT
 #EXTENSION=finalMVA_2lss_categorized_2D
 #EXTENSION=finalMVA_3l_categorized_2D
 #EXTENSION=LHEWeights
-EXTENSION=mvaVars
+#EXTENSION=mvaVars
+EXTENSION=MVAVars
 
 COMPONENT="prepareEventVariablesFriendTree_$EXTENSION"
 
+if [[ $EXTENSION == "MVAVars" ]]; then
+    for i in b2j4 b3j3 b3j4; do
+        OUTPUT=${CMSSW_BASE}/src/CMGTools/TTHAnalysis/macros/${FTBASE}/${EXTENSION}/${i}
+        rm -rf $OUTPUT
+        mkdir -p $OUTPUT
+        #FTREES=""
+        #FTREES="$FTREES -F sf/t /afs/cern.ch/work/c/cirkovic/Milos_14-02-2016/CMSSW_7_6_3/src/CMGTools/TTHAnalysis/macros/FTREES/eventVars/evVarFriend_{cname}.root"
+        #FTREES="$FTREES -F sf/t /afs/cern.ch/work/c/cirkovic/Milos_14-02-2016/CMSSW_7_6_3/src/CMGTools/TTHAnalysis/cfg/TREES_76X_150216_noLHE_jecV1_noJecUnc/2_recleaner_v8_b1E2_approx/evVarFriend_{cname}.root"
+        #FTREES="$FTREES -F sf/t /afs/cern.ch/work/c/cirkovic/Milos_14-02-2016/CMSSW_7_6_3/src/CMGTools/TTHAnalysis/cfg/TREES_76X_150216_noLHE_jecV1_noJecUnc/4_kinMVA_74XtrainingMilosJan31_v3_reclv8/evVarFriend_{cname}.root"
+        FTREES=""
+        #FTREES="$FTREES -F sf/t /afs/cern.ch/work/p/peruzzi/tthtrees/TREES_76X_150216_noLHE_jecV1_noJecUnc/2_recleaner_v8_b1E2_approx/evVarFriend_{cname}.root"
+        #FTREES="$FTREES -F sf/t ${INPUT}/2_recleaner_v8_b1E2_approx/evVarFriend_{cname}.root"
+        #FTREES="$FTREES -F sf/t ${INPUT}/2_recleaner_v8_b1E2/evVarFriend_{cname}.root"
+        COM="python ${COMPONENT}_${i}.py $Q $N -T 'sf' -t tr_all_${i} $INPUT $OUTPUT $FTREES $PUREWEIGHT 2>&1 | tee -a $RUNSCRIPT"
+        eval $COM
+    done
+fi
+
+if [[ $EXTENSION == "SKIP_MVAVars" ]]; then
+for i in b2j4 b3j3 b3j4; do
+    OUTPUT=${CMSSW_BASE}/src/CMGTools/TTHAnalysis/macros/${FTBASE}/${EXTENSION}/${i}
+    rm -rf $OUTPUT
+    mkdir -p $OUTPUT
+    #FTREES=""
+    #FTREES="$FTREES -F sf/t /afs/cern.ch/work/c/cirkovic/Milos_14-02-2016/CMSSW_7_6_3/src/CMGTools/TTHAnalysis/macros/FTREES/eventVars/evVarFriend_{cname}.root"
+    #FTREES="$FTREES -F sf/t /afs/cern.ch/work/c/cirkovic/Milos_14-02-2016/CMSSW_7_6_3/src/CMGTools/TTHAnalysis/cfg/TREES_76X_150216_noLHE_jecV1_noJecUnc/2_recleaner_v8_b1E2_approx/evVarFriend_{cname}.root"
+    #FTREES="$FTREES -F sf/t /afs/cern.ch/work/c/cirkovic/Milos_14-02-2016/CMSSW_7_6_3/src/CMGTools/TTHAnalysis/cfg/TREES_76X_150216_noLHE_jecV1_noJecUnc/4_kinMVA_74XtrainingMilosJan31_v3_reclv8/evVarFriend_{cname}.root"
+    FTREES=""
+    #FTREES="$FTREES -F sf/t /afs/cern.ch/work/p/peruzzi/tthtrees/TREES_76X_150216_noLHE_jecV1_noJecUnc/2_recleaner_v8_b1E2_approx/evVarFriend_{cname}.root"
+    #FTREES="$FTREES -F sf/t ${INPUT}/2_recleaner_v8_b1E2_approx/evVarFriend_{cname}.root"
+    #FTREES="$FTREES -F sf/t ${INPUT}/2_recleaner_v8_b1E2/evVarFriend_{cname}.root"
+    COM="python ${COMPONENT}_${i}.py $Q $N -T 'sf' -t tr_all_${i} $INPUT $OUTPUT $FTREES $PUREWEIGHT 2>&1 | tee -a $RUNSCRIPT"
+    #echo $COM
+    eval $COM
+done
+fi
 
 if [[ $EXTENSION == "mvaVars" ]]; then
 OUTPUT=${CMSSW_BASE}/src/CMGTools/TTHAnalysis/macros/${FTBASE}/${EXTENSION}

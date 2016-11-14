@@ -1,0 +1,18 @@
+max	*	number of categories
+jmax	*	number of samples minus one
+kmax	*	number of nuisance parameter
+----------------------------------------------------------------------------------------------------------------------
+
+bin		muchannel
+observation	571.0	
+----------------------------------------------------------------------------------------------------------------------
+bin	muchannel	muchannel
+process	signal	     	bg
+process	0       	1 	
+rate	657.14	        571.0
+---------------------------------------------------------------------------------------------------------------------
+#source of uncertainty pdf	signal	 bg 	
+CMS_simpleNorm_sig     lnN	 1.20	 -
+CMS_simpleNorm_bg      lnN	 -	 1.20
+
+

@@ -43,10 +43,8 @@ class MVAVars:
         #/afs/cern.ch/work/c/cirkovic/fcnc/CMSSW_8_0_12/src/tHFCNC/NtupleAnalyzer/test/MVA/weights/TMVAClassification_BDT.weights.xml
         basedir = "/afs/cern.ch/work/c/cirkovic/fcnc/CMSSW_8_0_12/src/tHFCNC/NtupleAnalyzer/test/MVA/"
 
-        '''
-        trainings = [0]
-        '''
-        samples = ["ST", "TT"]
+        trainings = ["ST_e", "TT_e", "both_e", "ST_m", "TT_m", "both_m", "ST_all", "TT_all", "both_all"]
+        #samples = ["ST", "TT"]
         categories = ["default"]
 
         #VARS = []
@@ -67,7 +65,8 @@ class MVAVars:
                         VARS[str(t)+"/"+s+"_"+c].append(v.attrib['Title'])
         '''
 
-        for s in samples:
+        #for s in samples:
+        for s in trainings:
             for c in categories:
                 weights = basedir+"/"+s+"/weights/TMVAClassification_BDT.weights.xml"
                 print weights
@@ -119,7 +118,8 @@ class MVAVars:
                     ( cat_lambdas[c], MVATool(s+"_"+c, basedir+str(t)+"/"+s+"_"+c+"/weights/"+s+"_"+c+"_BDTG.weights.xml", self._vars[str(t)+"/"+s+"_"+c], specs=self._Spect) ),
                     ])
         '''
-        for s in samples:
+        #for s in samples:
+        for s in trainings:
             for c in categories:
                 self._MVAs["MVA_"+s+"_"+c] = CategorizedMVA([
                 ( cat_lambdas[c], MVATool("MVA_"+s+"_"+c, basedir+"/"+s+"/weights/TMVAClassification_BDT.weights.xml", self._vars[s+"_"+c]) ),

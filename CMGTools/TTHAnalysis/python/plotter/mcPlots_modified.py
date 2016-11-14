@@ -567,6 +567,7 @@ def doLegend(pmap,mca,corner="TR",textSize=0.035,cutoff=1e-2,cutoffSignals=True,
        
         leg = ROOT.TLegend(x1,y1,x2,y2)
         leg.SetFillColor(0)
+        leg.SetFillStyle(0)
         leg.SetShadowColor(0)
         if not legBorder:
             leg.SetLineColor(0)

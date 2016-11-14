@@ -1,0 +1,9 @@
+CMS_tH_th : ST_TH_1L3B                              : .* : 1.2
+CMS_tH_th : ST_TH_1L3B_Hct                          : .* : 1.2
+CMS_tH_th : TT_TopLeptonicDecay_TH_1L3B_Eta_Hut     : .* : 1.2
+CMS_tH_th : TT_AntitopLeptonicDecay_TH_1L3B_Eta_Hut : .* : 1.2
+CMS_tH_th : TT_TopLeptonicDecay_TH_1L3B_Eta_Hct     : .* : 1.2
+CMS_tH_th : TT_AntitopLeptonicDecay_TH_1L3B_Eta_Hct : .* : 1.2
+
+CMS_tH_tt : TT_TuneCUETP8M1_13TeV-powheg-pythia8    : .* : 1.2
+

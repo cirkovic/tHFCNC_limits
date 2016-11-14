@@ -1,0 +1,24 @@
+#/ST_Hct/                                      1.75    2485000    497
+#/ST_Hut/                                     14.13    2490000    498
+#/TTbar_TopLep_Hct/                           41.61    1171580    325
+#/TTbar_AntiTopLep_Hct/                       41.61    1189512    330
+#/TTbar_TopLep_Hut/                           41.61    2402601    665
+#/TTbar_AntiTopLep_Hut/                       41.61    1273994    353
+#/TT_TuneCUETP8M1_13TeV-powheg-pythia8/      831.8     3570138    100
+
+TTbar_TopLep_Hut+     : TTbar_TopLep_Hut     : 41.61/4/2402601 ; FillColor=ROOT.kViolet-4, Label="TTbar_TopLep_Hut",     NormSystematic=0.2
+TTbar_AntiTopLep_Hut+ : TTbar_AntiTopLep_Hut : 41.61/4/1273994 ; FillColor=ROOT.kGreen-5,  Label="TTbar_AntiTopLep_Hut", NormSystematic=0.2
+
+TTbar_TopLep_Hct+     : TTbar_TopLep_Hct     : 41.61/4/1171580 ; FillColor=ROOT.kSpring+2, Label="T_TopLeptonicDecay_TH_1L3B_Eta_Hct",     NormSystematic=0.2
+TTbar_AntiTopLep_Hct+ : TTbar_AntiTopLep_Hct : 41.61/4/1189512 ; FillColor=ROOT.kCyan+2,   Label="TTbar_AntiTopLep_Hct", NormSystematic=0.2
+
+#TT_TuneCUETP8M1_13TeV-powheg-pythia8     : TT_TuneCUETP8M1_13TeV-powheg-pythia8    : 831.8/(3570138.*100/4103) ; FillColor=ROOT.kCyan,     Label="TT_TuneCUETP8M1_13TeV-powheg-pythia8",    NormSystematic=0.2
+TT_TuneCUETP8M1_13TeV-powheg-pythia8     : TT_TuneCUETP8M1_13TeV-powheg-pythia8    : 831.8/(3570138) ; FillColor=ROOT.kCyan,     Label="TT_TuneCUETP8M1_13TeV-powheg-pythia8",    NormSystematic=0.2
+
+data: SingleMuonB
+data: SingleMuonC
+data: SingleMuonD
+data: SingleElectronB
+data: SingleElectronC
+data: SingleElectronD
+

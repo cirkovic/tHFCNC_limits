@@ -1,0 +1,15 @@
+Combination of muchannel=count_FCNC_mu.dat  elchannel=count_FCNC_el.dat
+imax 2 number of bins
+jmax 1 number of processes minus 1
+kmax 2 number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+bin          muchannel  elchannel
+observation  571.0      439.0    
+----------------------------------------------------------------------------------------------------------------------------------
+bin                                   muchannel  muchannel  elchannel  elchannel
+process                               signal     bg         signal     bg       
+process                               0          1          0          1        
+rate                                  657.1400   571.0000   593.8700   439.0000 
+----------------------------------------------------------------------------------------------------------------------------------
+CMS_simpleNorm_bg       lnN           -          1.2        -          1.2      
+CMS_simpleNorm_sig      lnN           1.2        -          1.2        -        

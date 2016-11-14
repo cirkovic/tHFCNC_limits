@@ -1,0 +1,14 @@
+## Datacard for cut file cuts.txt
+shapes *        * MVA_TOPHLEPBB_ST_b2j4.input.root x_$PROCESS x_$PROCESS_$SYSTEMATIC
+##----------------------------------
+bin         MVA_TOPHLEPBB_ST_b2j4
+observation 2722536.0
+##----------------------------------
+##----------------------------------
+bin                             MVA_TOPHLEPBB_ST_b2j4                  MVA_TOPHLEPBB_ST_b2j4                  MVA_TOPHLEPBB_ST_b2j4 
+process                                        ST_Hut                                 ST_Hct   TT_TuneCUETP8M1_13TeV-powheg-pythia8 
+process                                            -1                                      0                                      1 
+rate                                        62912.000                              72847.000                            2586777.000 
+##----------------------------------
+CMS_tH_tt    lnN                                    -                                      -                                    1.2 
+CMS_tH_th_st lnN                                  1.2                                    1.2                                      - 

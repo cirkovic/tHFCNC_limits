@@ -1,0 +1,7 @@
+CMS_tH_th_tt : TTbar_TopLep_Hut     : .* : 1.8
+CMS_tH_th_tt : TTbar_AntiTopLep_Hut : .* : 1.8
+CMS_tH_th_tt : TTbar_TopLep_Hct     : .* : 1.8
+CMS_tH_th_tt : TTbar_AntiTopLep_Hct : .* : 1.8
+
+CMS_tH_tt : TT_TuneCUETP8M1_13TeV-powheg-pythia8    : .* : 1.8
+
