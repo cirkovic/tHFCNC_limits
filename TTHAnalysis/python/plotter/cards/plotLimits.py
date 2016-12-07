@@ -36,7 +36,8 @@ c1 = ROOT.TCanvas("c1","c1", 600, 600)
 c1.SetWindowSize(600 + (600 - c1.GetWw()), 600 + (600 - c1.GetWh()));
 c1.SetTicky(0)
 c1.SetTickx(0)
-c1.SetLeftMargin(0.37)
+#c1.SetLeftMargin(0.37)
+c1.SetLeftMargin(0.17)
 
 
 results = {}
@@ -65,13 +66,33 @@ elif postfix == "NJet":
     }
 elif postfix == "QMVA":
     results = {
-      '4l'    : [6.7873, 4.0246, 5.7377, 8.8438, 14.2725, 22.653],
-      '2l'    : [9.1374, 1.7152, 2.3369, 3.3906, 4.9989, 7.2605],
-      'ee'    : [11.8393, 4.9224, 6.6791, 9.6562, 14.4675, 21.0426],
-      'em'    : [6.7048, 2.6245, 3.5564, 5.1094, 7.5737, 10.9643],
-      'mumu'  : [14.1821, 2.1696, 2.9938, 4.3906, 6.6483, 9.8688],
-      '3l'    : [6.7329, 1.824, 2.5293, 3.7656, 5.792, 8.7319],
-      'comb'  : [6.6331, 1.1961, 1.6411, 2.3828, 3.5701, 5.2213],
+#      '4l'    : [6.7873, 4.0246, 5.7377, 8.8438, 14.2725, 22.653],
+#      '2l'    : [9.1374, 1.7152, 2.3369, 3.3906, 4.9989, 7.2605],
+#      'ee'    : [11.8393, 4.9224, 6.6791, 9.6562, 14.4675, 21.0426],
+#      'em'    : [6.7048, 2.6245, 3.5564, 5.1094, 7.5737, 10.9643],
+#      'mumu'  : [14.1821, 2.1696, 2.9938, 4.3906, 6.6483, 9.8688],
+#      '3l'    : [6.7329, 1.824, 2.5293, 3.7656, 5.792, 8.7319],
+#      'comb'  : [6.6331, 1.1961, 1.6411, 2.3828, 3.5701, 5.2213],
+
+#     'b2j3'    : [0, 0.447216, 0.60984, 0.818202, 1.199352, 1.661814],
+#     'b2j4'    : [0, 0.40656, 0.564102, 0.767382, 1.138368, 1.570338],
+#     'b3j3'    : [0, 0.223608, 0.299838, 0.421806, 0.625086, 0.848694],
+#     'b3j4'    : [0, 0.182952, 0.233772, 0.320166, 0.5082, 0.701316],
+
+#    'b2j3': [0, 0.447216, 0.60984, 0.818202, 1.199352, 1.661814  ],
+#    'b2j4': [0, 0.40656, 0.564102, 0.767382, 1.138368, 1.570338  ],
+#    'b3j3': [0, 0.223608, 0.299838, 0.421806, 0.625086, 0.848694 ],
+#    'b3j4': [0, 0.182952, 0.233772, 0.320166, 0.5082, 0.701316   ],
+
+    'b2j3': [0, 0.400464, 0.555984, 0.7776, 1.139184, 1.578528   ],
+    'b2j4': [0, 0.489888, 0.653184, 0.890352, 1.306368, 1.800144 ],
+    'b3j3': [0, 0.171072, 0.229392, 0.322704, 0.497664, 0.695952 ],
+    'b3j4': [0, 0.209952, 0.268272, 0.400464, 0.56376, 0.79704   ],
+
+#      'b2j3': [0.447216, 0.60984, 0.818202, 1.199352, 1.661814  ,0],
+#      'b2j4': [0.40656, 0.564102, 0.767382, 1.138368, 1.570338  ,0],
+#      'b3j3': [0.223608, 0.299838, 0.421806, 0.625086, 0.848694 ,0],
+#      'b3j4': [0.182952, 0.233772, 0.320166, 0.5082, 0.701316   ,0],
     }
 elif postfix == "QNJet":
     results = {
@@ -88,12 +109,12 @@ else: raise RuntimeError, "Embeh?"
 
 
 
-frame = ROOT.TH2F("frame","frame", 100, 1.0, 30, 5, 0, 5);
-frame.GetXaxis().SetTitle("95% CL upper limit on #mu = #sigma/#sigma_{SM}")
-frame.GetYaxis().SetBinLabel(1, "#splitline{combined}{   #mu < %.1f (%.1f exp)}" % (results['comb'][0],results['comb'][3])  )
-frame.GetYaxis().SetBinLabel(2, "#splitline{dilepton}{   #mu < %.1f (%.1f exp)}" % (results['2l'  ][0],results['2l'  ][3])  )
-frame.GetYaxis().SetBinLabel(3, "#splitline{trilepton}{  #mu < %.1f (%.1f exp)}" % (results['3l'  ][0],results['3l'  ][3])  )
-frame.GetYaxis().SetBinLabel(4, "#splitline{four-lepton}{#mu < %.1f (%.1f exp)}" % (results['4l'  ][0],results['4l'  ][3])  )
+frame = ROOT.TH2F("frame","frame", 100, 1e-1, 2, 5, 0, 5);
+frame.GetXaxis().SetTitle("95% CL upper limit on #sigma")
+#frame.GetYaxis().SetBinLabel(1, "#splitline{combined}{   #mu < %.1f (%.1f exp)}" % (results['comb'][0],results['comb'][3])  )
+#frame.GetYaxis().SetBinLabel(2, "#splitline{dilepton}{   #mu < %.1f (%.1f exp)}" % (results['2l'  ][0],results['2l'  ][3])  )
+#frame.GetYaxis().SetBinLabel(3, "#splitline{trilepton}{  #mu < %.1f (%.1f exp)}" % (results['3l'  ][0],results['3l'  ][3])  )
+#frame.GetYaxis().SetBinLabel(4, "#splitline{four-lepton}{#mu < %.1f (%.1f exp)}" % (results['4l'  ][0],results['4l'  ][3])  )
 frame.GetYaxis().SetLabelSize(0.070);
 frame.GetXaxis().SetNoExponent(1);
 frame.GetXaxis().SetMoreLogLabels(1);
@@ -105,6 +126,7 @@ obs = ROOT.TGraphAsymmErrors(4)
 exp = ROOT.TGraphAsymmErrors(4)
 b68 = ROOT.TGraphAsymmErrors(4)
 b95 = ROOT.TGraphAsymmErrors(4)
+'''
 for i,l in enumerate(["comb","2l","3l","4l"]):
     obs.SetPoint(i, results[l][0], 0.5+i)
     exp.SetPoint(i, results[l][3], 0.5+i)
@@ -114,6 +136,7 @@ for i,l in enumerate(["comb","2l","3l","4l"]):
     b95.SetPointError(i, results[l][3]-results[l][1], results[l][5]-results[l][3], 0.5, 0.5)
     exp.SetPointError(i, 0,0, 0.5, 0.5)
     obs.SetPointError(i, 0,0, 0.5, 0.5)
+'''
 
 b68.SetFillColor(80);
 b95.SetFillColor(90);
@@ -141,7 +164,7 @@ doSpam("CMS Preliminary",                    .38, .875, .690, .927, align=21, te
 doSpam("m_{H} = 125.7 GeV",                  .38, .795, .690, .867, align=21, textSize=0.045)
 #doSpam( combtext,                            .32, .765, .950, .847, align=21, textSize=0.045)
 leg = doLegend(.710,.795,.950,.937, textSize=0.0355)
-leg.AddEntry(obs, "Observed", "LP")
+#leg.AddEntry(obs, "Observed", "LP")
 leg.AddEntry(b68, "Exp. (68%)", "LPF")
 leg.AddEntry(b95, "Exp. (95%)", "LPF")
 leg.Draw()
@@ -149,14 +172,15 @@ leg.Draw()
 c1.Print("clslimit%s.png" % postfix)
 c1.Print("clslimit%s.pdf" % postfix)
 
-frame = ROOT.TH2F("frame","frame", 100, 1.0, 30, 8, 0, 8);
-frame.GetXaxis().SetTitle("95% CL upper limit on #mu = #sigma/#sigma_{SM}")
-frame.GetYaxis().SetBinLabel(1, "#splitline{combined}{   #mu < %.1f (%.1f exp)}" % (results['comb'][0],results['comb'][3])  )
-frame.GetYaxis().SetBinLabel(2, "#splitline{dimuon}{   #mu < %.1f (%.1f exp)}" % (results['mumu'  ][0],results['mumu'  ][3])  )
-frame.GetYaxis().SetBinLabel(3, "#splitline{dielectron}{   #mu < %.1f (%.1f exp)}" % (results['ee'  ][0],results['ee'  ][3])  )
-frame.GetYaxis().SetBinLabel(4, "#splitline{electron-muon}{   #mu < %.1f (%.1f exp)}" % (results['em'  ][0],results['em'  ][3])  )
-frame.GetYaxis().SetBinLabel(5, "#splitline{trilepton}{  #mu < %.1f (%.1f exp)}" % (results['3l'  ][0],results['3l'  ][3])  )
-frame.GetYaxis().SetBinLabel(6, "#splitline{four-lepton}{#mu < %.1f (%.1f exp)}" % (results['4l'  ][0],results['4l'  ][3])  )
+#frame = ROOT.TH2F("frame","frame", 100, 1e-1, 1.8, 6, 0, 6);
+frame = ROOT.TH2F("frame","frame", 100, 2e-1, 1.85, 5, 0, 5);
+frame.GetXaxis().SetTitle("95% CL upper limit on #sigma")
+#frame.GetYaxis().SetBinLabel(1, "#splitline{combined}{   #mu < %.1f (%.1f exp)}" % (results['comb'][0],results['comb'][3])  )
+frame.GetYaxis().SetBinLabel(1, "b2j3" )
+frame.GetYaxis().SetBinLabel(2, "b2j4" )
+frame.GetYaxis().SetBinLabel(3, "b3j3" )
+frame.GetYaxis().SetBinLabel(4, "b3j4" )
+#frame.GetYaxis().SetBinLabel(6, "#splitline{four-lepton}{#mu < %.1f (%.1f exp)}" % (results['4l'  ][0],results['4l'  ][3])  )
 frame.GetYaxis().SetLabelSize(0.070);
 frame.GetXaxis().SetNoExponent(1);
 frame.GetXaxis().SetMoreLogLabels(1);
@@ -164,19 +188,20 @@ frame.Draw()
 c1.SetLogx(1)
 
 
-obs = ROOT.TGraphAsymmErrors(6)
-exp = ROOT.TGraphAsymmErrors(6)
-b68 = ROOT.TGraphAsymmErrors(6)
-b95 = ROOT.TGraphAsymmErrors(6)
-for i,l in enumerate(["comb","mumu","ee","em","3l","4l"]):
-    obs.SetPoint(i, results[l][0], 0.5+i)
+#obs = ROOT.TGraphAsymmErrors(4)
+exp = ROOT.TGraphAsymmErrors(4)
+b68 = ROOT.TGraphAsymmErrors(4)
+b95 = ROOT.TGraphAsymmErrors(4)
+#for i,l in enumerate(["comb","mumu","ee","em","3l","4l"]):
+for i,l in enumerate(["b2j3","b2j4","b3j3","b3j4"]):
+#    obs.SetPoint(i, results[l][0], 0.5+i)
     exp.SetPoint(i, results[l][3], 0.5+i)
     b68.SetPoint(i, results[l][3], 0.5+i)
     b95.SetPoint(i, results[l][3], 0.5+i)
     b68.SetPointError(i, results[l][3]-results[l][2], results[l][4]-results[l][3], 0.5, 0.5)
     b95.SetPointError(i, results[l][3]-results[l][1], results[l][5]-results[l][3], 0.5, 0.5)
     exp.SetPointError(i, 0,0, 0.5, 0.5)
-    obs.SetPointError(i, 0,0, 0.5, 0.5)
+#    obs.SetPointError(i, 0,0, 0.5, 0.5)
 
 b68.SetFillColor(80);
 b95.SetFillColor(90);
@@ -184,13 +209,13 @@ for X in exp, b68, b95:
     X.SetMarkerStyle(25);
     X.SetLineWidth(3);
     X.SetLineStyle(2);
-obs.SetMarkerStyle(21);
-obs.SetLineWidth(3);
-obs.SetLineStyle(1);
+#obs.SetMarkerStyle(21);
+#obs.SetLineWidth(3);
+#obs.SetLineStyle(1);
 b95.Draw("E2 SAME")
 b68.Draw("E2 SAME")
 exp.Draw("PZ SAME")
-obs.Draw("PZ SAME")
+#obs.Draw("PZ SAME")
 
 #stopLine = ROOT.TLine(results['4l'][0]+results['4l'][1]-0.02,  0.25, results['4l'][0]+results['4l'][1]-0.02, 0.75);
 #stopLine.SetLineStyle(2);
@@ -199,12 +224,12 @@ obs.Draw("PZ SAME")
 
 #combtext = "combined #mu = %.2f_{#scale[1.4]{-}%.2f}^{+%.2f}" % (results['comb'][0],-results['comb'][1],results['comb'][2])
 frame.Draw("AXIS SAME")
-doSpam("#sqrt{s} = 8 TeV,  L = 19.6 fb^{-1}",.48, .955, .975, .995, align=32, textSize=0.0355)
+doSpam("#sqrt{s} = 13 TeV,  L = 12.9 fb^{-1}",.48, .955, .975, .995, align=32, textSize=0.0355)
 doSpam("CMS Preliminary",                    .38, .875, .690, .927, align=21, textSize=0.045)
-doSpam("m_{H} = 125.7 GeV",                  .38, .795, .690, .867, align=21, textSize=0.045)
+#doSpam("m_{H} = 125.7 GeV",                  .38, .795, .690, .867, align=21, textSize=0.045)
 #doSpam( combtext,                            .32, .765, .950, .847, align=21, textSize=0.045)
 leg = doLegend(.710,.795,.950,.937, textSize=0.0355)
-leg.AddEntry(obs, "Observed", "LP")
+#leg.AddEntry(obs, "Observed", "LP")
 leg.AddEntry(b68, "Exp. (68%)", "LPF")
 leg.AddEntry(b95, "Exp. (95%)", "LPF")
 leg.Draw()

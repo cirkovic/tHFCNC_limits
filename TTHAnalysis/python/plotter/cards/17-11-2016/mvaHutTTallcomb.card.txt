@@ -1,0 +1,20 @@
+Combination of b2j3=mvaHutTTallb2j3.card.txt  b3j3=mvaHutTTallb3j3.card.txt  b2j4=mvaHutTTallb2j4.card.txt  b3j4=mvaHutTTallb3j4.card.txt
+imax 4 number of bins
+jmax 2 number of processes minus 1
+kmax 2 number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+shapes *     b2j3  mvaHutTTallb2j3.input.root x_$PROCESS x_$PROCESS_$SYSTEMATIC
+shapes *     b2j4  mvaHutTTallb2j4.input.root x_$PROCESS x_$PROCESS_$SYSTEMATIC
+shapes *     b3j3  mvaHutTTallb3j3.input.root x_$PROCESS x_$PROCESS_$SYSTEMATIC
+shapes *     b3j4  mvaHutTTallb3j4.input.root x_$PROCESS x_$PROCESS_$SYSTEMATIC
+----------------------------------------------------------------------------------------------------------------------------------
+bin          b2j3       b3j3       b2j4       b3j4     
+observation  2770233.0  182233.0   2600329.0  316546.0 
+----------------------------------------------------------------------------------------------------------------------------------
+bin                             b2j3                                  b2j3                                  b2j3                                  b3j3                                  b3j3                                  b3j3                                  b2j4                                  b2j4                                  b2j4                                  b3j4                                  b3j4                                  b3j4                                
+process                         TTbar_AntiTopLep_Hut                  TTbar_TopLep_Hut                      TT_TuneCUETP8M1_13TeV-powheg-pythia8  TTbar_AntiTopLep_Hut                  TTbar_TopLep_Hut                      TT_TuneCUETP8M1_13TeV-powheg-pythia8  TTbar_AntiTopLep_Hut                  TTbar_TopLep_Hut                      TT_TuneCUETP8M1_13TeV-powheg-pythia8  TTbar_AntiTopLep_Hut                  TTbar_TopLep_Hut                      TT_TuneCUETP8M1_13TeV-powheg-pythia8
+process                         -1                                    0                                     1                                     -1                                    0                                     1                                     -1                                    0                                     1                                     -1                                    0                                     1                                   
+rate                            46766.0000                            90312.0000                            2633155.0000                          10363.0000                            20373.0000                            151497.0000                           45481.0000                            88072.0000                            2466776.0000                          21007.0000                            40810.0000                            254729.0000                         
+----------------------------------------------------------------------------------------------------------------------------------
+CMS_tH_th_tt            lnN     1.2                                   1.2                                   -                                     1.2                                   1.2                                   -                                     1.2                                   1.2                                   -                                     1.2                                   1.2                                   -                                   
+CMS_tH_tt               lnN     -                                     -                                     1.2                                   -                                     -                                     1.2                                   -                                     -                                     1.2                                   -                                     -                                     1.2                                 

@@ -1,0 +1,22 @@
+#MVA_ST_default : MVA_ST_default : 20,-1.0,1.0;      XTitle="MVA_ST_default", Legend='TL', MoreY=1.4, Logy=True
+#MVA_TT_default : MVA_TT_default : 20,-1.0,1.0;      XTitle="MVA_TT_default", Legend='TL', MoreY=1.4, Logy=True
+
+mvaHutST : mvaHutST : 20,-1.0,1.0;      XTitle="mvaHutST", Legend='TL', MoreY=1.4
+
+#H_m            : H_m            : 50,0.0,300.0;     XTitle="H_m",         Legend='TL', MoreY=1.4
+#H_pt           : H_pt           : 50,0.0,500.0;     XTitle="H_pt",        Legend='TL', MoreY=1.4
+#H_eta          : H_eta          : 20,-2.5,2.5;      XTitle="H_eta",       Legend='TL', MoreY=1.4
+#top_m          : top_m          : 50,80.0,300.0;    XTitle="top_m",       Legend='TL', MoreY=1.4
+#top_pt         : top_pt         : 50,0.0,500.0;     XTitle="top_pt",      Legend='TL', MoreY=1.4
+#top_eta        : top_eta        : 20,-2.5,2.5;      XTitle="top_eta",     Legend='TL', MoreY=1.4
+#njet           : njet           : 8,3.5,11.5;       XTitle="njet",        Legend='TL', MoreY=1.4
+#HT             : HT             : 50,100.0,1000.0;  XTitle="HT",          Legend='TL', MoreY=1.4
+#Hb1_Hb2_dr     : Hb1_Hb2_dr     : 50,0.0,5.0;       XTitle="Hb1_Hb2_dr",  Legend='TL', MoreY=1.4
+#W_m            : W_m            : 50,70.0,90.0 ;    XTitle="W_m",         Legend='TL', MoreY=1.4
+#W_pt           : W_pt           : 50,0.0,500.0;     XTitle="W_pt",        Legend='TL', MoreY=1.4
+#W_eta          : W_eta          : 10,-2.5,2.5;      XTitle="W_eta",       Legend='TL', MoreY=1.4
+#H_nu_dr        : H_nu_dr        : 50,0.0,7.0;       XTitle="H_nu_dr",     Legend='TL', MoreY=1.4
+#H_l_dr         : H_l_dr         : 50,0.0,5.0;       XTitle="H_l_dr",      Legend='TL', MoreY=1.4
+#chi2           : chi2           : 50,0.0,70.0;      XTitle="chi2",        Legend='TL', MoreY=1.4
+#l_charge       : l_charge       : 3,-1.5,1.5;       XTitle="l_charge",    Legend='TL', MoreY=1.4
+

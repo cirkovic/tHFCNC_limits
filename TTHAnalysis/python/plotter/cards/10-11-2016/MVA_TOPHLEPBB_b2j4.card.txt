@@ -1,0 +1,19 @@
+Combination of st=MVA_TOPHLEPBB_ST_b2j4.card.txt  tt=MVA_TOPHLEPBB_TT_b2j4.card.txt
+imax 2 number of bins
+jmax 6 number of processes minus 1
+kmax 3 number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+shapes *   st  MVA_TOPHLEPBB_ST_b2j4.input.root x_$PROCESS x_$PROCESS_$SYSTEMATIC
+shapes *   tt  MVA_TOPHLEPBB_TT_b2j4.input.root x_$PROCESS x_$PROCESS_$SYSTEMATIC
+----------------------------------------------------------------------------------------------------------------------------------
+bin          st         tt       
+observation  2722536.0  2808376.0
+----------------------------------------------------------------------------------------------------------------------------------
+bin                             st                                    st                                    st                                    tt                                    tt                                    tt                                    tt                                    tt                                  
+process                         ST_Hct                                ST_Hut                                TT_TuneCUETP8M1_13TeV-powheg-pythia8  TTbar_AntiTopLep_Hut                  TTbar_TopLep_Hut                      TTbar_AntiTopLep_Hct                  TTbar_TopLep_Hct                      TT_TuneCUETP8M1_13TeV-powheg-pythia8
+process                         -5                                    -4                                    1                                     -3                                    -2                                    -1                                    0                                     1                                   
+rate                            72847.0000                            62912.0000                            2586777.0000                          48683.0000                            87491.0000                            43226.0000                            42199.0000                            2586777.0000                        
+----------------------------------------------------------------------------------------------------------------------------------
+CMS_tH_th_st            lnN     1.2                                   1.2                                   -                                     -                                     -                                     -                                     -                                     -                                   
+CMS_tH_th_tt            lnN     -                                     -                                     -                                     1.2                                   1.2                                   1.2                                   1.2                                   -                                   
+CMS_tH_tt               lnN     -                                     -                                     1.2                                   -                                     -                                     -                                     -                                     1.2                                 

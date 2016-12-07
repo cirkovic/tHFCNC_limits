@@ -1,0 +1,15 @@
+CMS_tH_th_st : ST_Hut               : .* : 1.2
+
+CMS_tH_tt : TT_TuneCUETP8M1_13TeV-powheg-pythia8    : .* : 1.2
+
+##   luminosity
+#lumi_8TeV : FH.*|TT[WZ] : .* : 1.026
+
+##   lepton efficiencies
+#CMS_FHl_lepEff : FH.*|TT[WZ] : .*2lss.* : 1.10
+#CMS_FHl_lepEff : FH.*|TT[WZ] : .*3l*    : 1.15
+
+##   b-tagging   uncertain6es
+#CMS_FHlep_eff_b  : FH : 2lss_ee.* : 1.03
+#CMS_FHlep_fake_b : FH : 2lss_ee.* : 1.02
+

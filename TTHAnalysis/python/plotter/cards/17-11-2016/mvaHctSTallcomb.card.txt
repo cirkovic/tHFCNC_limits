@@ -1,0 +1,20 @@
+Combination of b2j3=mvaHctSTallb2j3.card.txt  b3j3=mvaHctSTallb3j3.card.txt  b2j4=mvaHctSTallb2j4.card.txt  b3j4=mvaHctSTallb3j4.card.txt
+imax 4 number of bins
+jmax 1 number of processes minus 1
+kmax 2 number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+shapes *     b2j3  mvaHctSTallb2j3.input.root x_$PROCESS x_$PROCESS_$SYSTEMATIC
+shapes *     b2j4  mvaHctSTallb2j4.input.root x_$PROCESS x_$PROCESS_$SYSTEMATIC
+shapes *     b3j3  mvaHctSTallb3j3.input.root x_$PROCESS x_$PROCESS_$SYSTEMATIC
+shapes *     b3j4  mvaHctSTallb3j4.input.root x_$PROCESS x_$PROCESS_$SYSTEMATIC
+----------------------------------------------------------------------------------------------------------------------------------
+bin          b2j3       b3j3       b2j4       b3j4     
+observation  2745108.0  198347.0   2537093.0  295768.0 
+----------------------------------------------------------------------------------------------------------------------------------
+bin                             b2j3                                  b2j3                                  b3j3                                  b3j3                                  b2j4                                  b2j4                                  b3j4                                  b3j4                                
+process                         ST_Hct                                TT_TuneCUETP8M1_13TeV-powheg-pythia8  ST_Hct                                TT_TuneCUETP8M1_13TeV-powheg-pythia8  ST_Hct                                TT_TuneCUETP8M1_13TeV-powheg-pythia8  ST_Hct                                TT_TuneCUETP8M1_13TeV-powheg-pythia8
+process                         0                                     1                                     0                                     1                                     0                                     1                                     0                                     1                                   
+rate                            111953.0000                           2633155.0000                          46850.0000                            151497.0000                           70317.0000                            2466776.0000                          41039.0000                            254729.0000                         
+----------------------------------------------------------------------------------------------------------------------------------
+CMS_tH_th_st            lnN     1.2                                   -                                     1.2                                   -                                     1.2                                   -                                     1.2                                   -                                   
+CMS_tH_tt               lnN     -                                     1.2                                   -                                     1.2                                   -                                     1.2                                   -                                     1.2                                 

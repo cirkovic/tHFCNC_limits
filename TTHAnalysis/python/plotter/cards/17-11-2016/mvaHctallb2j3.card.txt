@@ -1,0 +1,19 @@
+Combination of st=mvaHctSTallb2j3.card.txt  tt=mvaHctTTallb2j3.card.txt
+imax 2 number of bins
+jmax 3 number of processes minus 1
+kmax 3 number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+shapes *   st  mvaHctSTallb2j3.input.root x_$PROCESS x_$PROCESS_$SYSTEMATIC
+shapes *   tt  mvaHctTTallb2j3.input.root x_$PROCESS x_$PROCESS_$SYSTEMATIC
+----------------------------------------------------------------------------------------------------------------------------------
+bin          st         tt       
+observation  2745108.0  2721371.0
+----------------------------------------------------------------------------------------------------------------------------------
+bin                             st                                    st                                    tt                                    tt                                    tt                                  
+process                         ST_Hct                                TT_TuneCUETP8M1_13TeV-powheg-pythia8  TTbar_AntiTopLep_Hct                  TTbar_TopLep_Hct                      TT_TuneCUETP8M1_13TeV-powheg-pythia8
+process                         -2                                    1                                     -1                                    0                                     1                                   
+rate                            111953.0000                           2633155.0000                          44746.0000                            43470.0000                            2633155.0000                        
+----------------------------------------------------------------------------------------------------------------------------------
+CMS_tH_th_st            lnN     1.2                                   -                                     -                                     -                                     -                                   
+CMS_tH_th_tt            lnN     -                                     -                                     1.2                                   1.2                                   -                                   
+CMS_tH_tt               lnN     -                                     1.2                                   -                                     -                                     1.2                                 

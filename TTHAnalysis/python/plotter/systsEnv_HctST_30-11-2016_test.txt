@@ -1,0 +1,22 @@
+CMS_tH_th_st : ST_Hct               : .* : 20.0
+
+CMS_tH_tt     : TT_TuneCUETP8M1_13TeV-powheg-pythia8                                   : .* : 20.0
+CMS_tH_dy1    : DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8                : .* : 20.0
+CMS_tH_dy2    : DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8            : .* : 20.0
+#CMS_tH_sttt   : ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1     : .* : 20.0
+CMS_tH_sttat  : ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1 : .* : 20.0
+CMS_tH_sts    : ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1       : .* : 20.0
+#CMS_tH_sttWt  : ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1           : .* : 20.0
+#CMS_tH_sttWat : ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1       : .* : 20.0
+#CMS_tH_wj     : WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8                     : .* : 20.0
+
+##   luminosity
+#lumi_8TeV : FH.*|TT[WZ] : .* : 1.026
+
+##   lepton efficiencies
+#CMS_FHl_lepEff : FH.*|TT[WZ] : .*2lss.* : 1.10
+#CMS_FHl_lepEff : FH.*|TT[WZ] : .*3l*    : 1.15
+
+##   b-tagging   uncertain6es    
+#CMS_FHlep_eff_b  : FH : 2lss_ee.* : 1.03
+#CMS_FHlep_fake_b : FH : 2lss_ee.* : 1.02

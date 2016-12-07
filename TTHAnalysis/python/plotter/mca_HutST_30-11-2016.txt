@@ -1,0 +1,28 @@
+#/ST_Hct/                                      1.75    2485000    497
+#/ST_Hut/                                     14.13    2490000    498
+#/TTbar_TopLep_Hct/                           41.61    1171580    325
+#/TTbar_AntiTopLep_Hct/                       41.61    1189512    330
+#/TTbar_TopLep_Hut/                           41.61    2402601    665
+#/TTbar_AntiTopLep_Hut/                       41.61    1273994    353
+##/TT_TuneCUETP8M1_13TeV-powheg-pythia8/      831.8     3570138    100
+#/TT_TuneCUETP8M1_13TeV-powheg-pythia8/      831.8   182424800    100/4103
+
+ST_Hut+                              : ST_Hut                               : 14.13/2490000 ; FillColor=ROOT.kOrange+1, Label="ST_Hut",                             NormSystematic=0.2
+
+TT_TuneCUETP8M1_13TeV-powheg-pythia8                                     : TT_TuneCUETP8M1_13TeV-powheg-pythia8                                   :   831.76 / 182424800 ; FillColor=ROOT.kCyan,   Label="TT",                   NormSystematic=0.2
+DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8                  : DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8                :  5765.4  /  28730591 ; FillColor=ROOT.kOrange, Label="DY",                   NormSystematic=0.2
+DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8              : DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8            : 18610    /  30912410 ; FillColor=ROOT.kPink,   Label="DY",                   NormSystematic=0.2
+ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1       : ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1     :    44.33 /   3279200 ; FillColor=ROOT.kViolet, Label="ST t-channel",         NormSystematic=0.2
+ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1   : ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1 :    26.38 /   1666000 ; FillColor=ROOT.kAzure,  Label="ST t-channel antitop", NormSystematic=0.2
+ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1         : ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1       :     3.36 /   1000000 ; FillColor=ROOT.kTeal,   Label="ST s-channel",         NormSystematic=0.2
+ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1             : ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1           :    35.85 /   5405726 ; FillColor=ROOT.kSpring, Label="ST tW",                NormSystematic=0.2
+ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1         : ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1       :    35.85 /   5280097 ; FillColor=ROOT.kYellow, Label="ST tW antitop",        NormSystematic=0.2
+WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8                       : WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8                     : 61526.7  /   9825699 ; FillColor=ROOT.kGray,   Label="WJets",                NormSystematic=0.2
+
+#data: SingleMuonB
+#data: SingleMuonC
+#data: SingleMuonD
+#data: SingleElectronB
+#data: SingleElectronC
+#data: SingleElectronD
+

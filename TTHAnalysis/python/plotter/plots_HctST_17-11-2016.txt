@@ -1,0 +1,32 @@
+mvaHctST : mvaHctST : 20,-1.0,1.0;      XTitle="mvaHctST", Legend='TL', MoreY=1.4
+
+HiggsMass_TOPHLEPBB                   :   HiggsMass_TOPHLEPBB                  :   50,0.0,300.0;      XTitle="HiggsMass_TOPHLEPBB                      ", Legend='TL', MoreY=1.4
+MVA_TOPHLEPBB                         :   MVA_TOPHLEPBB                        :   20,-1.0,1.0;       XTitle="MVA_TOPHLEPBB                            ", Legend='TL', MoreY=1.4
+HiggsEta_TOPHLEPBB                    :   HiggsEta_TOPHLEPBB                   :   50,-2.5,2.5;       XTitle="HiggsEta_TOPHLEPBB                       ", Legend='TL', MoreY=1.4
+TopLepMass_TOPHLEPBB                  :   TopLepMass_TOPHLEPBB                 :   50,0.0,300.0;      XTitle="TopLepMass_TOPHLEPBB                     ", Legend='TL', MoreY=1.4
+TopLepPt_TOPHLEPBB                    :   TopLepPt_TOPHLEPBB                   :   50,0.0,500.0;      XTitle="TopLepPt_TOPHLEPBB                       ", Legend='TL', MoreY=1.4
+TopLepEta_TOPHLEPBB                   :   TopLepEta_TOPHLEPBB                  :   50,-2.5,2.5;       XTitle="TopLepEta_TOPHLEPBB                      ", Legend='TL', MoreY=1.4
+HiggsBJet1HiggsBJet2Dr_TOPHLEPBB      :   HiggsBJet1HiggsBJet2Dr_TOPHLEPBB     :   50,0.0,10.0;       XTitle="HiggsBJet1HiggsBJet2Dr_TOPHLEPBB         ", Legend='TL', MoreY=1.4
+TopLepHiggsDr_TOPHLEPBB               :   TopLepHiggsDr_TOPHLEPBB              :   50,0.0,10.0;       XTitle="TopLepHiggsDr_TOPHLEPBB                  ", Legend='TL', MoreY=1.4
+HiggsBJet1CSVv2_TOPHLEPBB             :   HiggsBJet1CSVv2_TOPHLEPBB            :   50,0.0,1.0;        XTitle="HiggsBJet1CSVv2_TOPHLEPBB                ", Legend='TL', MoreY=1.4
+HiggsBJet2CSVv2_TOPHLEPBB             :   HiggsBJet2CSVv2_TOPHLEPBB            :   50,0.0,1.0;        XTitle="HiggsBJet2CSVv2_TOPHLEPBB                ", Legend='TL', MoreY=1.4
+TopLepBJetCSVv2_TOPHLEPBB             :   TopLepBJetCSVv2_TOPHLEPBB            :   50,0.0,1.0;        XTitle="TopLepBJetCSVv2_TOPHLEPBB                ", Legend='TL', MoreY=1.4
+TopHadMass_TOPTOPLEPHAD               :   TopHadMass_TOPTOPLEPHAD              :   50,0.0,300.0;      XTitle="TopHadMass_TOPTOPLEPHAD                  ", Legend='TL', MoreY=1.4
+MVA_TOPTOPLEPHAD                      :   MVA_TOPTOPLEPHAD                     :   20,-1.0,1.0;       XTitle="MVA_TOPTOPLEPHAD                         ", Legend='TL', MoreY=1.4
+TopLepMass_TOPTOPLEPHAD               :   TopLepMass_TOPTOPLEPHAD              :   20,-1.0,1.0;       XTitle="TopLepMass_TOPTOPLEPHAD                  ", Legend='TL', MoreY=1.4
+TopLepTopHadDr_TOPTOPLEPHAD           :   TopLepTopHadDr_TOPTOPLEPHAD          :   50,0.0,10.0;       XTitle="TopLepTopHadDr_TOPTOPLEPHAD              ", Legend='TL', MoreY=1.4
+TopLepBJetCSVv2_TOPTOPLEPHAD          :   TopLepBJetCSVv2_TOPTOPLEPHAD         :   50,0.0,1.0;        XTitle="TopLepBJetCSVv2_TOPTOPLEPHAD             ", Legend='TL', MoreY=1.4
+TopHadBJetCSVv2_TOPTOPLEPHAD          :   TopHadBJetCSVv2_TOPTOPLEPHAD         :   50,0.0,1.0;        XTitle="TopHadBJetCSVv2_TOPTOPLEPHAD             ", Legend='TL', MoreY=1.4
+TopHadWNonBJet1CSVv2_TOPTOPLEPHAD     :   TopHadWNonBJet1CSVv2_TOPTOPLEPHAD    :   50,0.0,1.0;        XTitle="TopHadWNonBJet1CSVv2_TOPTOPLEPHAD        ", Legend='TL', MoreY=1.4
+TopHadWNonBJet2CSVv2_TOPTOPLEPHAD     :   TopHadWNonBJet2CSVv2_TOPTOPLEPHAD    :   50,0.0,1.0;        XTitle="TopHadWNonBJet2CSVv2_TOPTOPLEPHAD        ", Legend='TL', MoreY=1.4
+HiggsMass_TOPTOPLEPHBB                :   HiggsMass_TOPTOPLEPHBB               :   50,0.0,300.0;      XTitle="HiggsMass_TOPTOPLEPHBB                   ", Legend='TL', MoreY=1.4
+MVA_TOPTOPLEPHBB                      :   MVA_TOPTOPLEPHBB                     :   20,-1.0,1.0;       XTitle="MVA_TOPTOPLEPHBB                         ", Legend='TL', MoreY=1.4
+TopLepMass_TOPTOPLEPHBB               :   TopLepMass_TOPTOPLEPHBB              :   50,0.0,300.0;      XTitle="TopLepMass_TOPTOPLEPHBB                  ", Legend='TL', MoreY=1.4
+HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB   :   HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB  :   50,0.0,10.0;       XTitle="HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB      ", Legend='TL', MoreY=1.4
+TopLepHiggsDr_TOPTOPLEPHBB            :   TopLepHiggsDr_TOPTOPLEPHBB           :   50,0.0,10.0;       XTitle="TopLepHiggsDr_TOPTOPLEPHBB               ", Legend='TL', MoreY=1.4
+HiggsBJet1CSVv2_TOPTOPLEPHBB          :   HiggsBJet1CSVv2_TOPTOPLEPHBB         :   50,0.0,1.0;        XTitle="HiggsBJet1CSVv2_TOPTOPLEPHBB             ", Legend='TL', MoreY=1.4
+HiggsBJet2CSVv2_TOPTOPLEPHBB          :   HiggsBJet2CSVv2_TOPTOPLEPHBB         :   50,0.0,1.0;        XTitle="HiggsBJet2CSVv2_TOPTOPLEPHBB             ", Legend='TL', MoreY=1.4
+TopLepBJetCSVv2_TOPTOPLEPHBB          :   TopLepBJetCSVv2_TOPTOPLEPHBB         :   50,0.0,1.0;        XTitle="TopLepBJetCSVv2_TOPTOPLEPHBB             ", Legend='TL', MoreY=1.4
+TopHadNonBJetCSVv2_TOPTOPLEPHBB       :   TopHadNonBJetCSVv2_TOPTOPLEPHBB      :   50,0.0,1.0;        XTitle="TopHadNonBJetCSVv2_TOPTOPLEPHBB          ", Legend='TL', MoreY=1.4
+LepCharge                             :   LepCharge                            :   3,-1.5,1.5;        XTitle="LepCharge                                ", Legend='TL', MoreY=1.4
+
